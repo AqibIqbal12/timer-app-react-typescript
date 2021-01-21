@@ -1,0 +1,9 @@
+.buttons {
+    font-size: 3rem;
+    /* transition: all 0.5s  */
+  }
+  
+.buttons:hover {
+    cursor: pointer;
+    /* font-size: 3.5rem; */
+  }
