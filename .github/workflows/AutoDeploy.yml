@@ -23,7 +23,7 @@ jobs:
         CI=false npm run build
 
     - name: Deploy to Netlify
-      uses: nwtgck/actions-netlify@v1.1.11
+      uses: nwtgck/actions-netlify@v1.1
       with:
         publish-dir: './build'
         production-deploy: true
