@@ -16,11 +16,13 @@ jobs:
       with:
           node-version: 12
     
+    - name: Running Tests
+      run:  npm run test
+      
     - name: Installing dependencies
       run: npm install
       
-    - name: Running Tests
-      run:  npm run test
+    
             
     - name: Building React App
       run: CI=false npm run build
