@@ -83,7 +83,7 @@ export const Timer = () => {
     return (
         <div className="timer-container">
             <div className="heading">
-                <h1>Timer App12345656767777777</h1>
+                <h1>Timer App12345656767777777888</h1>
             </div>
             <div className="time-display">
                 {hours < 10 ? `0${hours}` : hours}:{minutes < 10 ? `0${minutes}` : minutes}:{seconds < 10 ? `0${seconds}` : seconds}
