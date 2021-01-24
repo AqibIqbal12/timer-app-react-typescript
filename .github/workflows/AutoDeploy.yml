@@ -16,16 +16,16 @@ jobs:
       with:
           node-version: 12
     
-          
-    - name: Build React App
-      run: |
-        npm install
-        CI=false npm run build
-        
-    - name: Run Tests
-      run:  npm run test    
-
-    - name: Deploy to Netlify
+    - name: Installing dependencies
+      run: npm install
+      
+    - name: Running Tests
+      run:  npm run test
+            
+    - name: Building React App
+      run: CI=false npm run build
+            
+    - name: Deploying to Netlify
       uses: nwtgck/actions-netlify@v1.1
       with:
         publish-dir: './build'
